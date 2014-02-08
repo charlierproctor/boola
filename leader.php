@@ -34,7 +34,7 @@ if(! $conn )
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Boola Web App - NAME!!</title>
+    <title>CyberGuard: WWIII Edition</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/jumbotron-narrow.css" rel="stylesheet">
@@ -55,7 +55,7 @@ if(! $conn )
           <li><a href="index.php">Home</a></li>
           <li class="active"><a href="leader.php">Leaderboard</a></li>
         </ul>
-        <h3 class="text-muted">Boola Web App</h3>
+        <h3 class="text-muted">CyberGuard: WWIII Edition</h3>
       </div>
 
         <h2 align="center">Leaderboard</h2>

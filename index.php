@@ -70,7 +70,7 @@ $RecipientBlurb = $row[10];
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Boola Web App - NAME!!</title>
+    <title>CyberGuard: WWIII Edition</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/jumbotron-narrow.css" rel="stylesheet">
@@ -82,33 +82,33 @@ $RecipientBlurb = $row[10];
     <div class="row">
     <div class="col-md-2">
     <div style="height:50px"></div>
-    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="50px">
-  <li id="l1"><a>$100</a></li>
-  <li id="l2"><a>$500</a></li>
-  <li id="l3"><a>$1000</a></li>
-  <li id="l4"><a>$2500</a></li>
-  <li id="l5"><a>$5000</a></li>
-  <li id="l6"><a>$10000</a></li>
-    <li id="l7"><a>$25000</a></li>
-  <li id="l8"><a>$50000</a></li>
-    <li id="l9"><a>$100000</a></li>
-  <li id="l10"><a>$250000</a></li>
-  <li id="l11"><a>$500000</a></li>
-  <li id="l12"><a>$1000000</a></li>
+    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="50px" style="font-size:18px;font-weight: 900;">
+  <li align="center" id="l1"><a>$100</a></li>
+  <li align="center" id="l2"><a>$500</a></li>
+  <li align="center" id="l3"><a>$1,000</a></li>
+  <li align="center" id="l4"><a>$2,500</a></li>
+  <li align="center" id="l5"><a>$5,000</a></li>
+  <li align="center" id="l6"><a>$10,000</a></li>
+    <li align="center" id="l7"><a>$25,000</a></li>
+  <li align="center" id="l8"><a>$50,000</a></li>
+    <li align="center" id="l9"><a>$100,000</a></li>
+  <li align="center" id="l10"><a>$250,000</a></li>
+  <li align="center" id="l11"><a>$500,000</a></li>
+  <li align="center" id="l12"><a>$1,000,000</a></li>
 </ul>
 
     </div>
     <div class="col-md-6">
     
-      <div class="header">
+      <div class="header" >
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="index.php">Home</a></li>
           <li><a href="leader.php">Leaderboard</a></li>
         </ul>
-        <h3 class="text-muted">Boola Web App</h3>
+        <h3 class="text-muted">CyberGuard: WWIII Edition</h3>
       </div>
 
-        <h2 align="left"><?php echo $Subject; ?></h2>
+        <h3 align="left"><strong>Subject:&nbsp;&nbsp;</strong><?php echo $Subject; ?></h3>
         <h3 align="left"><strong>From:&nbsp;&nbsp;</strong><?php echo $SenderName . ' (' . $SenderEmail .')'; ?></h3>
  <hr>
       <div class="jumbotron" style="padding-left:30px; padding-right:20px; padding-top:20px; padding-bottom:20px;">
@@ -138,13 +138,25 @@ $RecipientBlurb = $row[10];
 
       <div class="row marketing">
         <div class="col-lg-6">
-<div align="center"><a class="btn btn-xlarge btn-success" onClick="openEmail()" href="#" role="button">Open</a></div>
+<div align="center">
+<a class="btn btn-xlarge btn-success" onClick="openEmail()" href="#" role="button">Open</a>
+<div style="height:30px"></div>
+<img onClick="openEmail()" src="img/left.png" width="100">
+</div>
         </div>
 
         <div class="col-lg-6">
-<div align="center"><a class="btn btn-xlarge btn-danger" onClick="ignoreEmail()" href="#" role="button">Ignore</a></div>
+<div align="center">
+<a class="btn btn-xlarge btn-danger" onClick="ignoreEmail()" href="#" role="button">Ignore</a>
+<div style="height:30px"></div>
+<img onClick="openEmail()" src="img/right.png" width="100">
+</div>
         </div>
       </div>
+
+<div align="center"><audio controls autoplay loop>
+  <source src="wwtbam.mp3" type="audio/mp3">
+</audio></div>
 
       <div class="footer">
         <p>&copy; Yale Boolean -- Google Security Hackathon 2014</p>
@@ -153,17 +165,18 @@ $RecipientBlurb = $row[10];
 
 <div class="col-md-4">
 <div style="height:100px">
-<div class="row">
-<div class="col-md-6">
+<div class="row" style="font-weight:800">
+<div class="col-md-5">
 <div style="font-size:48px" align="left">Time:</div>
 </div>
-<div class="col-md-6">
+<div class="col-md-7">
 <div id="timer" style="font-size:48px" align="left">0.000</div>
 </div>
 </div>
-<div class="jumbotron" style="padding:15px">
+<div style="height:50px"></div>
+<div class="jumbotron" style="padding:15px;background-color: rgb(255, 150, 0);border-radius:30px">
 <h3>About the Recipient</h3>
-<div style="font-size:20px">
+<hr><div style="font-size:20px">
 <div><strong><?php echo $Recipient; ?></strong></div>
 
 <div><?php echo $RecipientBlurb; ?></div>
@@ -175,19 +188,21 @@ $RecipientBlurb = $row[10];
 
 
     </div> <!-- /container -->
-
+    <div id="theDiv">
+<style>.modal-backdrop {background-color: green;}</style>
+</div>
 <!-- modal for CORRECT answers -->
 <div class="modal fade" id="theModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="theModalTitle">Correct</h4>
+        <h2 class="modal-title" id="theModalTitle">Correct</h2>
       </div>
       <div class="modal-body">
-        <p id="theModalBody">On to the next level</p>
+        <p id="theModalBody" style="font-size:24px">On to the next level</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="theModalButton" type="submit">Bring it!</button>
+        <button type="submit" class="btn btn-lg btn-primary" id="theModalButton">Bring it!</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -195,6 +210,14 @@ $RecipientBlurb = $row[10];
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function listenForReturnKey(){
+window.onkeyup = function(event){
+    if(event.keyCode == 13){
+        $("#theModalButton").click();
+    }
+};};
+</script>
 <?php
 $NextLevel = $CurrentLevel + 1;
 
@@ -211,28 +234,33 @@ $('#l<?php echo $CurrentLevel; ?>').addClass('active');
 safeText = "<?php echo $Safe; ?>";
 
 safe = (safeText == "y");
-	
+
 function openEmail(){
 	if(safe){  // correct -- safe to open
-	
+		document.getElementById('theDiv').innerHTML="<style>.modal-backdrop {background-color: green;}</style>";
+
 	document.getElementById('theModalTitle').innerHTML = "Correct";
-	document.getElementById('theModalBody').innerHTML = "The attachment is safe to open! On to the next level.";
+	document.getElementById('theModalBody').innerHTML = "Yes! The attachment is safe to open! On to the next level.";
 	document.getElementById('theModalButton').innerHTML = "Bring it!";
 	$('#theModalButton').click(function(){reloadPage(<?php echo $NextLevel; ?>);});
 	$('#theModal').modal('show');
+		listenForReturnKey();
+
 		
 	} else{ //you die!!!!
-	
+	document.getElementById('theDiv').innerHTML="<style>.modal-backdrop {background-color: red;}</style>";
 	$('#theContainer').hide();
 	$('#hackImage').show();
 	window.setTimeout(function(){
 	$('#theContainer').show();
 	$('#hackImage').hide();
+
 	document.getElementById('theModalTitle').innerHTML = "Incorrect";
-	document.getElementById('theModalBody').innerHTML = "No! That message was malicious. " + "<?php echo $WhyMalicious ?>";
+	document.getElementById('theModalBody').innerHTML = "No! That message was malicious. Here's why: " + "<?php echo $WhyMalicious ?>";
 	document.getElementById('theModalButton').innerHTML = "Try again!";
 	$('#theModalButton').click(function(){reloadPage(1);});
 	$('#theModal').modal('show');
+	listenForReturnKey();
 	}, 3000);
 	
 	}
@@ -240,20 +268,35 @@ function openEmail(){
 
 function ignoreEmail(){
 	if(safe){
+	document.getElementById('theDiv').innerHTML="<style>.modal-backdrop {background-color: yellow;}</style>";
+
 	document.getElementById('theModalTitle').innerHTML = "Sort of...";
 	document.getElementById('theModalBody').innerHTML = "That attachment was safe to open! You lose one level.";
 	document.getElementById('theModalButton').innerHTML = "Ok!";
 	$('#theModalButton').click(function(){reloadPage(<?php echo $PriorLevel; ?>);});
 	$('#theModal').modal('show');
-			
+				listenForReturnKey();
+
 	} else{
+	document.getElementById('theDiv').innerHTML="<style>.modal-backdrop {background-color: green;}</style>";
 	document.getElementById('theModalTitle').innerHTML = "Correct";
-	document.getElementById('theModalBody').innerHTML = "That attachment was malicious. On to the next level.";
+	document.getElementById('theModalBody').innerHTML = "Yes! That attachment was malicious. On to the next level.";
 	document.getElementById('theModalButton').innerHTML = "Bring it!";
 	$('#theModalButton').click(function(){reloadPage(<?php echo $NextLevel; ?>);});
 	$('#theModal').modal('show');
+		listenForReturnKey();
+
 	}
 };
+
+window.onkeyup = function(event){
+    if(event.keyCode == 39){
+        ignoreEmail();
+    } else if(event.keyCode == 37){
+        openEmail();
+    }
+};
+
 
 function reloadPage(level){
 	document.getElementById('nextLevel').value = level;
@@ -290,5 +333,7 @@ setInterval(function() {
 </script>
 </div>
 <div hidden="true" id="hackImage" ><img style="height:100%; width:100%" src="img/hack.jpg" class="img-responsive"></div>
+
+
   </body>
 </html>

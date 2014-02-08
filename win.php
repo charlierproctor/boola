@@ -44,7 +44,7 @@ if (!mysqli_query($conn,$sql))
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <title>Boola Web App - NAME!!</title>
+    <title>CyberGuard: WWIII Edition</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/jumbotron-narrow.css" rel="stylesheet">
@@ -76,7 +76,7 @@ if (!mysqli_query($conn,$sql))
           <li><a href="index.php">Home</a></li>
           <li><a href="leader.php">Leaderboard</a></li>
         </ul>
-        <h3 class="text-muted">Boola Web App</h3>
+        <h3 class="text-muted">CyberGuard: WWIII Edition</h3>
       </div>
 		
         <h2 align="left">You won a million dollars!</h2>

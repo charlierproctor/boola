@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 
 
-    <title>Signin Template for Bootstrap</title>
+    <title>CyberGuard: WWIII Edition</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
