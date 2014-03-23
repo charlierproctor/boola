@@ -36,6 +36,13 @@ if(! $conn )
 
     <title>CyberGuard: WWIII Edition</title>
 
+<!-- Facebook Meta-Tags -->
+<meta property="og:title" content="CyberGuard: WWIII Edition"/>
+<meta property="og:site_name" content="CyberGuard: WWIII Edition"/>
+<meta property="og:url" content="http://boola.charlieproctor.com/"/>
+<meta name="description" property="og:description" content="As an FBI agent in this Who-Wants-To-Be-A-Millionaire spinoff, you are tasked with deciding whether email attachments are safe to download.  Players compete against each other to see who can complete the game (win a million dollars) the quickest."/>
+<meta property="fb:app_id" content="280869895398506"/>
+
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/jumbotron-narrow.css" rel="stylesheet">
     
